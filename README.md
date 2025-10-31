@@ -46,7 +46,7 @@ print(gen_array_with_opt.generate(2, 5, seed=123))
 
 | Module | Function signature | Description |
 | ------ | ------------------ | ----------- |
-| `bgen` | `generate(seed: int | None = None) -> str` | 100-character binary string with roughly 10% ones. |
+| `bgen` | `generate(seed: int)` | `(None = None) -> str` | 100-character binary string with roughly 10% ones. |
 | `gen_array_with_opt` | `generate(test_count, sum_n, min_n=1, min_value=1, max_value=1_000_000_000, value_bias=0, seed=None) -> str` | Recreates the CLI output of `gen-array-with-opt`, returning the formatted multi-test string. |
 | `gen_bipartite_graph` | `generate(n, m, k, seed=None) -> str` | Random bipartite graph with partitions of size `n` and `m` and exactly `k` edges. |
 | `gen_rooted_tree_graph` | `generate(n, t, seed=None) -> str` | Rooted tree generator; output is `n` followed by the parent list layout used by testlib. |
